@@ -1,0 +1,33 @@
+{
+  "name": "react-tasks",
+  "version": "1.0.0",
+  "description": "Environment for react tasks",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selinabrauns/react-tasks.git"
+  },
+  "author": "s.brauns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/selinabrauns/react-tasks/issues"
+  },
+  "homepage": "https://github.com/selinabrauns/react-tasks#readme",
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-react": "^3.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}

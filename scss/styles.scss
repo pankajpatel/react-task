@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.content {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .main {
+    position: relative;
+    height: 100%;
+
+    .header {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px 20px;
+      border-bottom: 1px solid lightgray;
+
+      img {
+        width: 16%;
+      }
+    }
+
+    .page-content{
+      margin: 15px;
+
+      .col {
+        width: 50%;
+        float: left;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+
+      .drop-down {
+
+        .head {
+          padding: 5px 10px;
+          background-color: lightgray;
+          display: block;
+        }
+        ul {
+          display: none;
+        }
+        &.open{
+          ul{
+            display: block
+          }
+        }
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        border: 1px solid lightgray;
+
+        .list-item {
+          a,
+          &.list {
+            padding: 5px 10px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+          }
+
+          &:hover {
+            background-color: #F2F1F1;
+            box-sizing: border-box;
+          }
+        }
+      }
+
+      .user-input {
+        margin: 5px 0;
+
+        input {
+          width: calc(70% - 2px);
+          padding: 2px 5px;
+          box-sizing: border-box;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        button {
+          width: 30%;
+          padding: 4px 5px;
+          border: none;
+          background-color: lightgray;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            background-color: #F2F1F1;
+          }
+        }
+      }
+
+      .reset-button {
+        width: 100%;
+        background-color: lightgray;
+        border: none;
+        padding: 4px 5px;
+        margin-top: 5px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: gray;
+      color: white;
+
+      p {
+        width: 100%;
+        text-align: center;
+        padding: 5px 20px;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
